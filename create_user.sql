@@ -10,6 +10,13 @@ SET SERVEROUTPUT ON;
 create user name_user identified by password_user;
 /
 
+--when create user any error
+-->>ORA-65096 : invalid common user or role name_user
+--The solution is to set session
+alter session set "_ORACLE_SCRIPT"=TRUE;
+/
+
+
 --GIVE PRIVILEGES
 grant all privileges to name_user;
 /
