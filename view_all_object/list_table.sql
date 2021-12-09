@@ -1,3 +1,7 @@
 SELECT OWNER, OBJECT_NAME FROM DBA_OBJECTS
 WHERE OBJECT_TYPE='TABLE' AND OWNER='SYSTEM';
 /
+
+--select table and view
+select * from tab;
+/

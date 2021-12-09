@@ -25,3 +25,7 @@ grant all privileges to name_user;
 grant connect, resource to IMPORT_EMPLOYEE identified by oracle;
 /
 
+--view ALL USER
+select username from all_users
+/
+

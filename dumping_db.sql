@@ -5,6 +5,7 @@ mkdir DATADUMP
 >mkdir <NAME_DIR>
 
 @2 Create directory datapump
+--first login with / as sysdba for create dir dump
 create directory datadump_schema AS 'D:\DATADUMP';
 >create directory <NAME_DIR_DATAPUMP> AS '<NAME_DIR>';
 
